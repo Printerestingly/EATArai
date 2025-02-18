@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EAT Arai</string>
+    <string name="random_opt">Random now !</string>
+    <string name="choose_opt">Choose Cuisine</string>
+    <string name="what_to_eat">What CUISINES do you want to eat?</string>
+
+    <string name="cuisine">Cuisine</string>
+    <string name="type">Type</string>
+    <string name="menu">Menu</string>
+    <string name="history">History</string>
+
+    <string name="random_btn">RANDOM!!</string>
+</resources>

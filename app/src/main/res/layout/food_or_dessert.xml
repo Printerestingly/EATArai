@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ChooseFoodDessert">
+
+    <!-- Dessert Section -->
+    <FrameLayout
+        android:id="@+id/leftDessert"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/dessert_pink"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightFood" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dessert"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@id/leftDessert"
+        app:layout_constraintEnd_toEndOf="@id/leftDessert"
+        app:layout_constraintStart_toStartOf="@id/leftDessert"
+        app:layout_constraintTop_toTopOf="@id/leftDessert" />
+
+    <!-- Food Section -->
+    <FrameLayout
+        android:id="@+id/rightFood"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/food_bg"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="1"
+        app:layout_constraintStart_toEndOf="@+id/leftDessert"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@id/rightFood"
+        app:layout_constraintEnd_toEndOf="@id/rightFood"
+        app:layout_constraintStart_toStartOf="@id/rightFood"
+        app:layout_constraintTop_toTopOf="@id/rightFood" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_food_dessert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

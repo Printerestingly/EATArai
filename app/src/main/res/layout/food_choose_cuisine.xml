@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/food_bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ChooseCuisineActivity">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="73dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_food"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="32sp"
+        app:layout_constraintTop_toTopOf="@id/icon"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:id="@+id/headChooseCuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/what_to_eat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/chooseCuisine1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headChooseCuisine"
+        app:layout_constraintEnd_toStartOf="@id/chooseCuisine2"
+        android:background="@drawable/food_selector_choose_cuisine"
+        android:textColor="@color/text_choose_cuisine"
+        android:text="Thai"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/chooseCuisine2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headChooseCuisine"
+        app:layout_constraintStart_toEndOf="@id/chooseCuisine1"
+        android:background="@drawable/food_selector_choose_cuisine"
+        android:textColor="@color/text_choose_cuisine"
+        android:text="Japanese"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/chooseCuisine3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chooseCuisine1"
+        app:layout_constraintEnd_toStartOf="@id/chooseCuisine4"
+        android:background="@drawable/food_selector_choose_cuisine"
+        android:textColor="@color/text_choose_cuisine"
+        android:text="Korean"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/chooseCuisine4"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chooseCuisine2"
+        app:layout_constraintStart_toEndOf="@id/chooseCuisine3"
+        android:background="@drawable/food_selector_choose_cuisine"
+        android:textColor="@color/text_choose_cuisine"
+        android:text="Italian"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/chooseCuisine5"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chooseCuisine3"
+        app:layout_constraintEnd_toStartOf="@id/chooseCuisine6"
+        android:background="@drawable/food_selector_choose_cuisine"
+        android:textColor="@color/text_choose_cuisine"
+        android:text="Chinese"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/chooseCuisine6"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chooseCuisine4"
+        app:layout_constraintStart_toEndOf="@id/chooseCuisine5"
+        android:background="@drawable/food_selector_choose_cuisine"
+        android:textColor="@color/text_choose_cuisine"
+        android:text="Others"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/nextBtn"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/shape_bg_rounded_red_500"
+        android:text="cancel"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintStart_toEndOf="@id/cancelBtn"
+        android:background="@drawable/shape_food_rounded_green"
+        android:text="NEXT"
+        android:textSize="20sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

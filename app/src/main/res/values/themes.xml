@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.EATArai" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/food_bg</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="colorPrimary">@color/food_orange</item>
+        <item name="colorAccent">@color/food_green</item>
+        <item name="android:fontFamily">@font/itim_irregular</item>
+    </style>
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_700">#00796B</color>"
+
+<!--    Burger-->
+    <color name="food_bg">#f3eec3</color>
+    <color name="food_green">#84d15d</color>
+    <color name="food_orange">#f5a82b</color>
+    <color name="food_yellow">#fdd857</color>
+
+    <color name="red_500">#ec6559</color>
+    <color name="red_700">#d2545d</color>
+    
+<!--    Ice Cream-->
+    <color name="dessert_purple">#E2CDF1</color>
+    <color name="dessert_pink">#FDC3C8</color>
+    <color name="dessert_vanilla">#FFE89F</color>
+    <color name="dessert_silver">#F1F6FA</color>
+    <color name="dessert_green">#DAF4B1</color>
+
+</resources>
