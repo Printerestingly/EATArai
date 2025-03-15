@@ -15,7 +15,7 @@ class FoodRandomizerDbHelper(context: Context) :
 
     companion object {
         const val DATABASE_NAME = "FoodRandomizer.db"
-        const val DATABASE_VERSION = 6
+        const val DATABASE_VERSION = 7
     }
 
     override fun onCreate(db: SQLiteDatabase) {
@@ -36,7 +36,7 @@ class FoodRandomizerDbHelper(context: Context) :
         db.execSQL(
             " CREATE TABLE History (" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "cuisine TEXT,menu TEXT,isFood BOOLEAN," +
+                "cuisine TEXT,menu TEXT, category TEXT" +
                 "timestamp DATETIME DEFAULT CURRENT_TIMESTAMP)"
         )
 
